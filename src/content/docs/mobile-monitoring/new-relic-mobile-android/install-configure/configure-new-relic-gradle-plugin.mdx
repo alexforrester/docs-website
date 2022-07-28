@@ -71,7 +71,7 @@ Here are some simple examples showing how to apply plugin configuration options 
 
     ```
     newrelic {
-        // use a common buildId for all variants (default: true)
+        // Generate unique build IDs for each app variant. (default: true)
         variantMapsEnabled true
 
         // Tag and report Proguard maps for these build types (default: Release)
@@ -87,7 +87,7 @@ Here are some simple examples showing how to apply plugin configuration options 
     id="app-level"
     title="Enable map uploads for multiple variants"
   >
-    Multiple build types can be specified, separated by commas:
+    Multiple build types can be specified, separated by commas. If you have multiple application variants (flavors) of a build type then these will all be built.
 
     ```
     newrelic {
